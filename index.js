@@ -5,6 +5,7 @@ const port = process.env.PORT || 5000;
 
 // middleware
 app.use(cors());
+app.use(express.json());
 
 
 const users =[
@@ -22,7 +23,10 @@ app.get('/users', (req,res)=>{
     res.send(users);
 })
 
-app.post('/users',(req, res))
+app.post('/users',(req, res)=>{
+    console.log('api post hetting');
+    console.log(req.body);
+})
 
 
 
