@@ -5,4 +5,5 @@
  * 4.options will have three things:method
  * 5. Options will have headers:'content-type': 'application/json'
  * 6. body : Don't forget to send data by JSON stringify
+ * 7. On the server side don't forgate to use express.json()
  */
